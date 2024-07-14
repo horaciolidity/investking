@@ -271,6 +271,13 @@ input {
   opacity: 0;
 }
 
+       .tradingview-widget-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ajusta la altura según tus necesidades */
+        }
+
 
 
   </style>
@@ -337,7 +344,37 @@ input {
     <li><strong>Plan Agresivo:</strong> Invierte el 10% en USDC y el 40% en activos de alto riesgo como tokens de proyectos emergentes en la red Optimism. Este plan es adecuado para inversores dispuestos a asumir más riesgos, con un rendimiento anual potencial del 20% o más.</li>
   </ul>
 </div>
-
+<div class="tradingview-widget-container">
+        <div id="tradingview_9c65c"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+        {
+            "symbols": [
+                {
+                    "proName": "BINANCE:BTCUSDT",
+                    "title": "Bitcoin"
+                },
+                {
+                    "proName": "BINANCE:ETHUSDT",
+                    "title": "Ethereum"
+                },
+                {
+                    "proName": "BINANCE:BNBUSDT",
+                    "title": "Binance Coin"
+                },
+                {
+                    "proName": "BINANCE:ADAUSDT",
+                    "title": "Cardano"
+                },
+                {
+                    "proName": "BINANCE:XRPUSDT",
+                    "title": "Ripple"
+                }
+            ],
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "showSymbolLogo": true,
+            "locale": "es"
+        }
    
     </body>
  
