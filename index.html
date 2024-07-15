@@ -402,14 +402,7 @@ input {
     </div>
 
 <div class="ccpw-widget" data-url="https://widgets.cryptocompare.com/"></div>
-<script type="text/javascript">
-  (function(){
-    var script = document.createElement("script");
-    script.async = true;
-    script.src = "https://widgets.cryptocompare.com/serve/v3/coin/header?fsyms=BTC,ETH,XRP,BCH,LTC&tsyms=USD,EUR,CNY,GBP";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
+
 
 
 
@@ -424,11 +417,18 @@ input {
     <li><strong>Plan Agresivo:</strong> Invierte el 10% en USDC y el 40% en activos de alto riesgo como tokens de proyectos emergentes en la red Optimism. Este plan es adecuado para inversores dispuestos a asumir más riesgos, con un rendimiento anual potencial del 20% o más.</li>
   </ul>
 </div>
+    </body>
+
+<script type="text/javascript">
+  (function(){
+    var script = document.createElement("script");
+    script.async = true;
+    script.src = "https://widgets.cryptocompare.com/serve/v3/coin/header?fsyms=BTC,ETH,XRP,BCH,LTC&tsyms=USD,EUR,CNY,GBP";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
 
 
-
-
-    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js">
     <script type="text/javascript">
         new TradingView.widget({
             "width": "100%",
@@ -475,7 +475,6 @@ input {
         });
     </script>
 
-    </body>
  
    
 </html>
