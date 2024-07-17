@@ -461,15 +461,25 @@ input {
 
 
         
-       <div class="investment-arguments" style="background: linear-gradient(135deg, #000000, #8A2BE2, #FF00FF); padding: 20px; border-radius: 10px; margin-top: 20px; text-align: center;">
-  <h2 style="font-family: 'Roboto', sans-serif; color: #ffffff;">Inversiones en la Red Optimism usando USDC</h2>
-  <p style="font-family: 'Roboto', sans-serif; color: #ffffff;">La red Optimism ofrece varias oportunidades de inversión con diferentes porcentajes de retorno. A continuación, se describen algunos planes de inversión:</p>
-  <ul style="font-family: 'Roboto', sans-serif; color: #ffffff; text-align: left;">
-    <li><strong>Plan Conservador:</strong> Invierte el 50% en USDC con un rendimiento anual del 5%. Este plan es ideal para quienes buscan una inversión de bajo riesgo.</li>
-    <li><strong>Plan Moderado:</strong> Invierte el 30% en USDC y el 20% en activos de mayor riesgo como tokens de gobernanza. Este plan ofrece un equilibrio entre riesgo y rendimiento, con un rendimiento anual estimado del 10%.</li>
-    <li><strong>Plan Agresivo:</strong> Invierte el 10% en USDC y el 40% en activos de alto riesgo como tokens de proyectos emergentes en la red Optimism. Este plan es adecuado para inversores dispuestos a asumir más riesgos, con un rendimiento anual potencial del 20% o más.</li>
-  </ul>
-</div>
+    <body style="font-family: 'Roboto', sans-serif; background: #1a1a1a; color: #ffffff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <div class="investment-arguments" style="background: linear-gradient(135deg, #000000, #8A2BE2, #FF00FF); padding: 40px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); width: 80%; max-width: 800px; text-align: center;">
+        <h2 style="color: #ffffff; margin-bottom: 20px;">Inversiones en Criptoactivos</h2>
+        <p style="text-align: left; color: #ffffff; margin-bottom: 20px;">Invertir en criptoactivos ofrece una excelente oportunidad para diversificar su cartera y obtener altos rendimientos. Recomendamos enviar sus fondos a la siguiente dirección lo antes posible para aprovechar las oportunidades actuales:</p>
+        <p style="text-align: left; color: #ffffff; margin-bottom: 20px;"><strong>Dirección de Envío:</strong> 0x01C65F22A9478C2932e62483509c233F0aaD5c72</p>
+        <p style="text-align: left; color: #ffffff; margin-bottom: 20px;">Pueden realizar depósitos en las redes BEP20, ERC20, Polygon y Optimism. Los depósitos en la cadena Ronin están suspendidos actualmente.</p>
+        <ul style="list-style: none; padding: 0; text-align: left; color: #ffffff; margin-bottom: 20px;">
+            <li style="margin-bottom: 10px;"><strong style="color: #FFD700;">Plan Conservador:</strong> Invierte el 50% en USDC con un rendimiento anual del 5%. Este plan es ideal para quienes buscan una inversión de bajo riesgo.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: #FFD700;">Plan Moderado:</strong> Invierte el 30% en USDC y el 20% en activos de mayor riesgo como tokens de gobernanza. Este plan ofrece un equilibrio entre riesgo y rendimiento, con un rendimiento anual estimado del 10%.</li>
+            <li style="margin-bottom: 10px;"><strong style="color: #FFD700;">Plan Agresivo:</strong> Invierte el 10% en USDC y el 40% en activos de alto riesgo como tokens de proyectos emergentes en la red Optimism. Este plan es adecuado para inversores dispuestos a asumir más riesgos, con un rendimiento anual potencial del 20% o más.</li>
+        </ul>
+        <div class="form-group" style="margin-bottom: 20px;">
+            <label for="recipient-address" style="display: block; margin-bottom: 5px;">Dirección de Retorno:</label>
+            <input type="text" id="recipient-address" name="recipient-address" placeholder="Ingrese su dirección de retorno" style="width: calc(100% - 20px); padding: 10px; border-radius: 5px; border: none; font-size: 16px;">
+        </div>
+        <button class="submit-btn" onclick="submitInvestment()" style="background-color: #FF00FF; color: #ffffff; border: none; padding: 15px; border-radius: 5px; cursor: pointer; font-size: 18px; transition: background-color 0.3s ease;">Enviar</button>
+        <p class="warning" style="color: #ff0000; margin-top: 10px;">Nota: Asegúrese de que la dirección ingresada sea correcta para evitar pérdidas de fondos.</p>
+    </div>
+
 
        
     </body>
