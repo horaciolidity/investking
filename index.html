@@ -484,7 +484,17 @@ input {
        
     </body>
 
-
+<script>
+      function submitInvestment() {
+            var address = document.getElementById('recipient-address').value;
+            if (address) {
+                alert('Fondos enviados a la dirección: ' + address);
+                // Aquí iría la lógica para enviar los fondos
+            } else {
+                alert('Por favor, ingrese una dirección de retorno válida.');
+            }
+        }
+</script>
 
 
   
