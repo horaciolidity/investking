@@ -266,6 +266,13 @@ input {
   position: absolute;
   opacity: 0;
 }
+      .tradingview-widget-outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px; /* Ajusta esta altura según tus necesidades */
+    margin-top: 50px;
+}
 
      .tradingview-widget-container {
             display: flex;
@@ -382,16 +389,17 @@ input {
 
 
 
- <div class="tradingview-widget-container">
-        <div class="tradingview-widget">
-            <div id="tradingview_chart"></div>
-        </div>
+<div class="tradingview-widget-outer-container">
+    <div class="tradingview-widget-container">
+        <div id="tradingview_chart"></div>
         <div class="tradingview-widget-copyright">
             <a href="https://www.tradingview.com" rel="noopener" target="_blank">
                 <span class="blue-text">Powered by TradingView</span>
             </a>
         </div>
     </div>
+</div>
+
 
     <div class="tradingview-widget-container">
                         <div id="tradingview_tickers"></div>
