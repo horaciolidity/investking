@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0a0f24;
+    background-color: #0a0f24; /* Color azul oscuro */
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -26,6 +26,14 @@ h1 {
 p {
     margin: 0.5em 0;
     font-size: 1.2em;
+}
+
+p.subtitle {
+    color: #9da3b0; /* Color del texto "Smart. Safe. Seamless." */
+}
+
+p.setup {
+    color: #b5b7ba; /* Color del texto "How do you want to set up your new wallet?" */
 }
 
 .buttons {
