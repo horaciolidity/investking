@@ -45,7 +45,7 @@
             <button class="import-btn">Import</button>
         </div>
         <div class="info">
-            <img src="ronin-info.png" alt="Ronin Info" class="info-img">
+            <img src="ronin-logo.svg" alt="Ronin Info" class="info-img">
             <div class="info-text">
                 <h2>What is a Recovery Phrase?</h2>
                 <p>It is a 12-word phrase that can be used to restore your wallet.</p>
