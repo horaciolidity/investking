@@ -8,6 +8,11 @@ body {
     align-items: center;
     height: 100vh;
 }
+ .error-message {
+            color: red;
+            display: none;
+            margin-top: 10px;
+        }
 
 .container {
     text-align: center;
