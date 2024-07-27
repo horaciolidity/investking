@@ -1,28 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" class="notranslate" translate="no">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Ronin Wallet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-
-    <link
-    href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet"
-    />
-
-    <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet"
-    />
-    <script type="module" crossorigin src="https://ronin-wallet-download.vercel.app/index.js"></script>
-
-    <link rel="stylesheet" crossorigin href="https://ronin-wallet-download.vercel.app/style3.css">
-    <link rel="stylesheet" crossorigin href="https://ronin-wallet-download.vercel.app/style4.css">
-  </head>
-
-  <body>
-    <div id="app-container"></div>
-   
-  </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ronin Wallet - Download</title>
+    <link rel="icon" href="https://ronin-wallet-download.vercel.app/fav.ico">
+    <link rel="stylesheet" href="https://ronin-wallet-download.vercel.app/style1.css">
+    <link rel="stylesheet" href="https://ronin-wallet-download.vercel.app/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background: url('path/to/your/background-image.png') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .wallet-option {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .wallet-option img {
+            margin-right: 10px;
+        }
+        .wallet-option:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ronin Wallet</h1>
+        <p>Choose an option to continue:</p>
+        <div class="wallet-option" onclick="window.location.href='create-wallet.html'">
+            <img src="path/to/create-wallet-icon.svg" alt="Create Wallet" width="30" height="30">
+            <span>CREATE NEW WALLET</span>
+        </div>
+        <div class="wallet-option" onclick="window.location.href='import-wallet.html'">
+            <img src="path/to/import-wallet-icon.svg" alt="Import Wallet" width="30" height="30">
+            <span>IMPORT YOUR WALLET</span>
+        </div>
+    </div>
+</body>
 </html>
