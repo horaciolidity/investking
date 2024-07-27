@@ -51,10 +51,19 @@ h1 {
     background-color: #303030;
 }
 
+/* Contenedor flex para colocar el texto al lado del panel */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Panel de frases con gradiente gris */
 .recovery-phrase {
-    background-color: #202020;
+    background: linear-gradient(135deg, #b0b0b0 0%, #e0e0e0 100%);
     padding: 1em;
     border-radius: 10px;
+    flex: 1;
 }
 
 .phrase-inputs {
