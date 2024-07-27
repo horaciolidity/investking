@@ -78,15 +78,16 @@ h1 {
     margin-bottom: 1em;
 }
 
-input[type="text"] {
-    background-color: #0e0e0e;
-    border: 1px solid #3a3a3a;
-    border-radius: 5px;
-    color: #ffffff;
-    padding: 0.5em;
-    width: 45%;
-    margin-bottom: 0.5em;
-}
+ .phrase-inputs input[type="text"] {
+            width: 45%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: transparent;
+            color: #333;
+        }
+
 
 .paste-btn, .import-btn {
     background-color: #202020;
