@@ -54,16 +54,18 @@ h1 {
 /* Contenedor flex para colocar el texto al lado del panel */
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Cambiado para alinear a la izquierda */
     align-items: flex-start;
+    gap: 1em; /* Espacio entre el texto y el panel */
 }
 
 /* Panel de frases con gradiente gris */
 .recovery-phrase {
-    background: linear-gradient(135deg, #b0b0b0 0%, #e0e0e0 100%);
+    background: linear-gradient(135deg, #d0d0d0 0%, #a0a0a0 100%);
     padding: 1em;
     border-radius: 10px;
     flex: 1;
+    min-width: 300px; /* Ajusta el ancho mínimo según sea necesario */
 }
 
 .phrase-inputs {
