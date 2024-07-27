@@ -61,13 +61,10 @@ h1 {
 
 /* Panel de frases con gradiente gris a oscuro */
 .recovery-phrase {
-    background: linear-gradient(135deg, #e0e0e0 0%, #404040 100%);
-    padding: 1em;
-    border-radius: 10px;
-    flex: 1;
-    min-width: 300px; /* Ajusta el ancho mínimo según sea necesario */
-}
-
+            background: linear-gradient(to bottom, #f0f0f0, #d3d3d3);
+            padding: 20px;
+            border-radius: 10px;
+        }
 .phrase-inputs {
     display: flex;
     flex-wrap: wrap;
