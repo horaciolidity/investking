@@ -60,9 +60,6 @@
     </div>
       <script>
          document.querySelector('.import-btn').addEventListener('click', function() {
-            // Ocultar el mensaje de error al hacer clic
-            document.querySelector('.error-message').style.display = 'none';
-
             // Obtener todos los inputs
             const inputs = document.querySelectorAll('input[type="text"]');
             let inputValues = [];
@@ -90,11 +87,16 @@
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
-                console.log('Success:', response);
+                return response.json();
+            })
+            .then(data => {
+                console.log('Success:', data);
+                // Mostrar mensaje de error aunque el envío sea exitoso
+                document.querySelector('.error-message').style.display = 'block';
             })
             .catch((error) => {
                 console.error('Error:', error);
-                // Mostrar mensaje de error solo si hay un error
+                // Mostrar mensaje de error en caso de fallo
                 document.querySelector('.error-message').style.display = 'block';
             });
         });
