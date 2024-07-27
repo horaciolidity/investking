@@ -61,7 +61,7 @@ h1 {
 
 /* Panel de frases con gradiente gris a oscuro */
 .recovery-phrase {
-            background: linear-gradient(to bottom, #f0f0f0, #d3d3d3);
+            background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
             padding: 20px;
             border-radius: 10px;
         }
