@@ -13,11 +13,11 @@
 
     body, html {
       height: 100%;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: 'Poppins', 'Comic Sans MS', cursive, sans-serif;
     }
 
     .popup {
-      display: flex; /* Mostrado desde el inicio */
+      display: flex;
       position: fixed;
       top: 0;
       left: 0;
@@ -30,7 +30,7 @@
       flex-direction: column;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
     .popup img {
@@ -42,29 +42,46 @@
       object-fit: cover;
       background-color: #fff;
       margin-bottom: 25px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+      100% { transform: scale(1); }
     }
 
     .popup h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+      font-size: 2.2rem;
+      margin-bottom: 15px;
       color: #ffdd57;
       text-shadow: 2px 2px 4px #000;
     }
 
+    .popup p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #f0f0f0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+
     .popup button {
-      padding: 15px 30px;
-      font-size: 18px;
+      padding: 15px 35px;
+      font-size: 20px;
       background-color: #29abe2;
       color: white;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: background 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: background 0.3s ease, transform 0.2s;
     }
 
     .popup button:hover {
       background-color: #007bb5;
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -73,8 +90,12 @@
   <div class="popup" id="popup">
     <img src="https://ronin-wallet-download.vercel.app/axie.gif" alt="Axie de Nueva Temporada" />
     <h2>¡Reclama tu Axie de nueva temporada!</h2>
+    <p>
+      ¡La nueva temporada está aquí! Celebra el inicio de esta aventura con un Axie exclusivo para los primeros entrenadores. 
+      Este Axie te dará ventajas únicas en batallas, misiones y recompensas especiales. ¡No pierdas esta oportunidad!
+    </p>
     <button onclick="window.location.href='https://ronin-wallet-download.vercel.app/download.html'">
-      Claim Axie now
+      🎁 Reclamar mi Axie
     </button>
   </div>
 
